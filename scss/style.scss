@@ -3,7 +3,7 @@
 /*************************************************************************/
 $darkblue:#2a4a7a;
 $lightblue:#5bc0de;
-$lightgrey:#d3d3d3;
+$lightgrey:#f4f4f4;
 $bodytextgrey:#717171;
 $black:#2d2d2d;
 $red:#be292e;
@@ -41,16 +41,17 @@ li{
 }
 h2{
 	color:$black;
+	font-weight:300px;
 }
 a{
 }
 img{
-	display:block;
 }
 
 /***** SITE STYLES *************/
 /**********************************/
 .wrapper{
+	position:relative;
 	width:90%;
 	margin: 0 auto;
 }
@@ -66,7 +67,7 @@ img{
 	.mobile-icon{
 		position:absolute;
 		top:35px;
-		right:5%;
+		right:1%;
 	    padding:10px 15px;
 	    line-height: 1em;
 	    text-decoration: none;
@@ -79,8 +80,9 @@ img{
 }
 .main-large-image{
 	position:relative;
-	background: url("../img/planned.jpg") no-repeat;
+	background: url("../img/insurance-large.jpg") no-repeat;
 	height:500px; 
+	max-width:1500px;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -93,15 +95,61 @@ img{
   		position:absolute;
   		bottom:20px;
   		left:20px;
-  		width: 80%;
+  		width: 50%;
   		padding:1em;
   		background: linear-gradient(to right, rgba(0,0,0,0.6) 0%,rgba(0,0,0,.01) 100%);
   		@include border-radius(4px);
-  		h1,h2{
+  		h1{
   			color:white;
 			font-size: 2em;
+			margin: 0;
+  		}
+  		h3{
+  			color:white;
+  			line-height: 1em;
   		}
   	}
+}
+.sub-heading{
+	background-color:$darkblue;
+	padding:1em 0;
+	h1{
+		color:white;
+		font-size: 1.5em;
+
+	}
+}
+.sub-page-text{
+	padding:1em 0 0 0;
+	img{
+		margin:1em 0;
+		width:90%;
+		max-width: 500px;
+		@include border-radius(4px);
+		border:1px solid $bodytextgrey;
+	}
+	.template-paragraph{
+		max-width: 500px;
+		padding-bottom:1em;
+	}
+}
+.sidebar{
+	display: none;
+}
+.col-2{
+	padding:0 0 3em 0;
+	a{
+		display: block;
+		width:85%;
+		padding:1em 0px;
+		text-decoration: none;
+	}
+	img{
+		width: 95%;
+		max-width: 500px;
+		@include border-radius(4px);
+		border:1px solid $bodytextgrey;
+	}
 }
 .col-4{
 	padding:2em 0px;
@@ -154,7 +202,7 @@ footer{
     	border-radius: 6px;
     	border:none;
     	margin-top:0.5em;
-    	background-color:green;
+    	background-color:$red;
 	}
 	img{
 		max-width: 50px;
@@ -204,6 +252,7 @@ footer{
 @media screen and (min-width: 650px) {
 	.wrapper{
 		width:95%;
+		max-width: 1500px;
 	}
 	.navigation{
 		img{
@@ -222,9 +271,10 @@ footer{
 			a{
 				color:$red;
 				text-decoration:none;
-				font-size: 1.2em;
+				font-size: 1em;
 				padding:5px 5px;
 				border:1.5px solid white;
+				font-weight: 700;
 				@include border-radius(4px);
 				transition: ease-in-out 0.2s;
 				&:hover{
@@ -236,9 +286,24 @@ footer{
 	.mobile-icon{
 		display:none
 	}
+	.col-2{
+		text-align:center;
+		a{
+			display: inline-block;
+			width:48%;
+			padding:1em 0px;
+		}
+		img{
+			width: 95%;
+			transition: ease all 0.5s;
+			&:hover{
+				border:1px solid $lightgrey;
+			}
+		}
+	}
 	.col-4{
 		text-align: center;
-		padding-bottom:3em;
+		padding:3em 0px;
 		div{
 			width:45%;
 			display:inline-block;
@@ -246,13 +311,42 @@ footer{
 			padding:10px 0px;
 			border-bottom:none;
 			margin:0px 2%;
+			max-width:700px;
 		}
 		p,h2{
 			text-align:left;
 		}
 		img{
 			width: 98%;
+			transition: ease all 0.3s;
+			&:hover{
+				border:1px solid $lightgrey;
+			}
 		}
+	}
+	.sub-page-template{
+		div{
+			width:50%;
+			display: inline-block;
+		}
+	}
+	.sidebar{
+		padding:1em 0 0 1em;
+		vertical-align: top;
+		display: inline-block;
+		float:right;
+		nav{
+			ul{
+				border-left: 1px solid $lightgrey;
+			}
+			li{
+
+			}
+			a{
+				text-decoration: none;
+			}
+		}
+
 	}
 	.social-footer{
 		nav{
@@ -269,6 +363,17 @@ footer{
 	}
 }
 @media screen and (min-width: 1000px) {
+	.main-large-image{
+		width:100%;
+		margin:0 auto;
+	}
+	.col-2{
+		text-align:center;
+		a{
+			display: inline-block;
+			width:24%;
+		}
+	}
 	.col-4{
 		text-align: center;
 		div{
@@ -282,6 +387,11 @@ footer{
 			text-align:left;
 		}
 	}
+	.navigation{
+		.full-navigation{
+			right: 0;
+		}
+	}
 	footer{
 		input{
 			max-width:600px;
@@ -291,7 +401,6 @@ footer{
 		}
 	}
 }
-
 
 
 

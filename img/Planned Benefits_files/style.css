@@ -1,0 +1,356 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 12, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 14, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 18, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 22, ../scss/style.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 25, ../scss/style.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 32, ../scss/style.scss */
+body {
+  font-family: 'Open Sans';
+  color: #717171;
+}
+
+/* line 36, ../scss/style.scss */
+ul {
+  list-style: none;
+}
+
+/* line 42, ../scss/style.scss */
+h2 {
+  color: #2d2d2d;
+}
+
+/* line 47, ../scss/style.scss */
+img {
+  display: block;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 53, ../scss/style.scss */
+.wrapper {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 58, ../scss/style.scss */
+.navigation {
+  padding: 1em 0px;
+}
+/* line 60, ../scss/style.scss */
+.navigation .full-navigation, .navigation .mobile-navigation {
+  display: none;
+}
+/* line 63, ../scss/style.scss */
+.navigation img {
+  width: 40%;
+  max-width: 100px;
+}
+/* line 67, ../scss/style.scss */
+.navigation .mobile-icon {
+  position: absolute;
+  top: 35px;
+  right: 5%;
+  padding: 10px 15px;
+  line-height: 1em;
+  text-decoration: none;
+  color: #2a4a7a;
+  border: 2px solid #2a4a7a;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 1em;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.75);
+}
+
+/* line 81, ../scss/style.scss */
+.main-large-image {
+  position: relative;
+  background: url("../img/planned.jpg") no-repeat;
+  height: 500px;
+  max-width: 1500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-top: 0.5px solid #d3d3d3;
+  -webkit-box-shadow: 0px 3px 5px 0px #918f91;
+  -moz-box-shadow: 0px 3px 5px 0px #918f91;
+  box-shadow: 0px 1px 3px 0px #918f91;
+}
+/* line 94, ../scss/style.scss */
+.main-large-image .overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 80%;
+  padding: 1em;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.01) 100%);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 102, ../scss/style.scss */
+.main-large-image .overlay-text h1, .main-large-image .overlay-text h2 {
+  color: white;
+  font-size: 2em;
+}
+
+/* line 108, ../scss/style.scss */
+.col-4 {
+  padding: 2em 0px;
+}
+/* line 110, ../scss/style.scss */
+.col-4 div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em 0px;
+  border-bottom: 1px solid #d3d3d3;
+}
+/* line 115, ../scss/style.scss */
+.col-4 div:last-child {
+  border-bottom: none;
+}
+/* line 119, ../scss/style.scss */
+.col-4 img {
+  width: 95%;
+  max-width: 500px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #717171;
+}
+/* line 125, ../scss/style.scss */
+.col-4 p {
+  margin-bottom: 0px;
+}
+/* line 128, ../scss/style.scss */
+.col-4 a {
+  padding: 5px;
+  color: #be292e;
+}
+
+/* line 134, ../scss/style.scss */
+footer {
+  color: white;
+  border-bottom: 6px solid #d3d3d3;
+}
+/* line 137, ../scss/style.scss */
+footer input {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 46px;
+  padding: 10px 10px;
+  font-size: 16px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  color: #2d2d2d;
+}
+/* line 148, ../scss/style.scss */
+footer button {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 46px;
+  padding: 10px 10px;
+  font-size: 16px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  border: none;
+  margin-top: 0.5em;
+  background-color: green;
+}
+/* line 161, ../scss/style.scss */
+footer img {
+  max-width: 50px;
+  display: inline-block;
+  padding: 0px 5px;
+  opacity: 0.9;
+}
+/* line 166, ../scss/style.scss */
+footer img:hover {
+  opacity: 0.75;
+}
+/* line 170, ../scss/style.scss */
+footer .newsletter {
+  padding: 2em 2em 3em 2em;
+  background-color: #5bc0de;
+}
+/* line 173, ../scss/style.scss */
+footer .newsletter p {
+  font-size: 1.7em;
+  text-align: center;
+  margin-top: 0px;
+}
+/* line 180, ../scss/style.scss */
+footer .social-footer {
+  background-color: #2a4a7a;
+  padding: 1em;
+  text-align: center;
+}
+/* line 186, ../scss/style.scss */
+footer nav ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+/* line 192, ../scss/style.scss */
+footer nav li {
+  padding: 5px 0px;
+}
+/* line 195, ../scss/style.scss */
+footer nav a {
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+/* line 201, ../scss/style.scss */
+footer div {
+  padding: 20px;
+}
+
+@media screen and (min-width: 650px) {
+  /* line 207, ../scss/style.scss */
+  .wrapper {
+    width: 95%;
+    max-width: 1500px;
+  }
+
+  /* line 212, ../scss/style.scss */
+  .navigation img {
+    max-width: 125px;
+    float: left;
+  }
+  /* line 216, ../scss/style.scss */
+  .navigation .full-navigation {
+    display: block;
+    position: absolute;
+    top: 56px;
+    right: 5%;
+  }
+  /* line 221, ../scss/style.scss */
+  .navigation .full-navigation li {
+    display: inline-block;
+    margin: 0px 5px;
+  }
+  /* line 225, ../scss/style.scss */
+  .navigation .full-navigation a {
+    color: #be292e;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 5px;
+    border: 1.5px solid white;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    transition: ease-in-out 0.2s;
+  }
+  /* line 233, ../scss/style.scss */
+  .navigation .full-navigation a:hover {
+    border: 1.5px solid #be292e;
+  }
+
+  /* line 239, ../scss/style.scss */
+  .mobile-icon {
+    display: none;
+  }
+
+  /* line 242, ../scss/style.scss */
+  .col-4 {
+    text-align: center;
+    padding-bottom: 3em;
+  }
+  /* line 245, ../scss/style.scss */
+  .col-4 div {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0px;
+    border-bottom: none;
+    margin: 0px 2%;
+  }
+  /* line 253, ../scss/style.scss */
+  .col-4 p, .col-4 h2 {
+    text-align: left;
+  }
+  /* line 256, ../scss/style.scss */
+  .col-4 img {
+    width: 98%;
+  }
+
+  /* line 261, ../scss/style.scss */
+  .social-footer nav {
+    padding: 1em;
+  }
+  /* line 263, ../scss/style.scss */
+  .social-footer nav li {
+    display: inline-block;
+  }
+  /* line 267, ../scss/style.scss */
+  .social-footer nav a:hover {
+    opacity: 0.6;
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* line 275, ../scss/style.scss */
+  .main-large-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* line 279, ../scss/style.scss */
+  .col-4 {
+    text-align: center;
+  }
+  /* line 281, ../scss/style.scss */
+  .col-4 div {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: none;
+    margin: 0px 2%;
+  }
+  /* line 288, ../scss/style.scss */
+  .col-4 p {
+    text-align: left;
+  }
+
+  /* line 292, ../scss/style.scss */
+  .full-navigation {
+    right: 0;
+  }
+
+  /* line 296, ../scss/style.scss */
+  footer input {
+    max-width: 600px;
+  }
+  /* line 299, ../scss/style.scss */
+  footer button {
+    max-width: 600px;
+  }
+}
