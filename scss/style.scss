@@ -4,7 +4,7 @@
 $darkblue:#2a4a7a;
 $lightblue:#5bc0de;
 $lightgrey:#f4f4f4;
-$bodytextgrey:#717171;
+$bodytextgrey:#4f4f4f;
 $black:#2d2d2d;
 $red:#be292e;
 
@@ -110,7 +110,7 @@ img{
   		}
   	}
 }
-.sub-heading{
+.subpage-heading{
 	background-color:$darkblue;
 	padding:1em 0;
 	h1{
@@ -119,33 +119,66 @@ img{
 
 	}
 }
-.sub-page-text{
+.services-text{
 	padding:1em 0 0 0;
+}
+.subpage-main-content{
+	position:relative;
+	padding:2em 0px;
 	img{
-		margin:1em 0;
+		display:block;
 		width:90%;
-		max-width: 500px;
 		@include border-radius(4px);
 		border:1px solid $bodytextgrey;
 	}
-	.template-paragraph{
-		max-width: 500px;
-		padding-bottom:1em;
-	}
 }
 .sidebar{
-	display: none;
+	position:relative;
+	display: block;
+	padding:0 0 2em 0;
+	ul:first-child{
+		padding:0;
+	}
+	ul:nth-child(2){
+		padding-left:6px;
+	}
+	li{
+		padding:5px;
+	}
+	.em{
+		padding:0px;
+		font-weight:700;
+	}
+	a{
+		font-size: 0.9em;
+		text-decoration: none;
+		color:$darkblue;
+		font-weight: 400px;
+		padding: 10px 7.5px 0px 7.5px;
+		line-height: 1.5px;
+		@include border-radius(4px);
+		&:hover{
+			font-size: 1em;
+			color:$red;
+		}
+	}
+	h3{
+		color:$black;
+		margin: 0em 0;
+	}
 }
 .col-2{
 	padding:0 0 3em 0;
 	a{
 		display: block;
-		width:85%;
+		width:90%;
+		margin: 0 auto;
 		padding:1em 0px;
 		text-decoration: none;
 	}
 	img{
-		width: 95%;
+		display: block;
+		width: 100%;
 		max-width: 500px;
 		@include border-radius(4px);
 		border:1px solid $bodytextgrey;
@@ -263,7 +296,7 @@ footer{
 			display: block;
 			position:absolute;
 			top:56px;
-			right:5%;
+			right:0;
 			li{
 				display:inline-block;
 				margin:0px 5px;
@@ -324,29 +357,56 @@ footer{
 			}
 		}
 	}
-	.sub-page-template{
-		div{
-			width:50%;
-			display: inline-block;
+	.subpage-container{
+		padding:2em 0em;
+	}
+	.subpage-main-content{
+		width:60%;
+		float:left;
+		img{
+			display:block;
+			width:95%;
+		}
+		p{
+			width:93%;
 		}
 	}
 	.sidebar{
-		padding:1em 0 0 1em;
-		vertical-align: top;
-		display: inline-block;
+		position:relative;
+		display: block;
+		width:35%;
 		float:right;
-		nav{
-			ul{
-				border-left: 1px solid $lightgrey;
-			}
-			li{
-
-			}
-			a{
-				text-decoration: none;
-			}
+		padding:1.8em 0em 0 0;
+		ul:first-child{
+			padding:0;
 		}
+		ul:nth-child(2){
+			padding-left:6px;
+		}
+		li{
+			padding:5px;
+		}
+		.em{
+			padding:0px;
+			font-weight:700;
+		}
+		a{
+			font-size: 0.9em;
+			text-decoration: none;
+			color:$darkblue;
+			font-weight: 400px;
+			padding: 10px 0px 0px 7.5px;
+			@include border-radius(4px);
+			&:hover{
+				color:$red;
+				font-weight: 700;
+			}
 
+		}
+		h3{
+			color:$black;
+			margin: 0em 0;
+		}
 	}
 	.social-footer{
 		nav{
@@ -391,6 +451,12 @@ footer{
 		.full-navigation{
 			right: 0;
 		}
+	}
+	.subpage-main-content{
+		width:70%;
+	}
+	.sidebar{
+		width:25%;
 	}
 	footer{
 		input{
