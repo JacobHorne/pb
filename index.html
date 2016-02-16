@@ -13,24 +13,23 @@
 
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
          <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
         
         <section class="navigation"> 
-            <div class="wrapper">
+            <div class="wrapper clearfix">
 
                 <a href="#"><alt="menu close icon" class="mobile-icon">MENU</a>
 
                 <a href="#"><img src="img/pb-logo.jpg" alt="site logo" class="logo"></a>
 
-                <nav class="mobile-navigation">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="index.html">CONTACT</a></li>
+                <nav class="mobile-navigation clearfix">
+                    <ul class="fallback">
+                      <li><a href="#">Sub-Link 1</a></li>
+                      <li><a href="#">Sub-Link 2</a></li>
+                      <li><a href="#">Sub-Link 3</a></li>
                     </ul>
                 </nav>
 
@@ -57,7 +56,7 @@
             
                 <div>
                     <a href="about.html"><img src="img/about.jpg" alt=""></a>
-                    <h2>About US</h2>
+                    <h2>About Us</h2>
                     <p>Plan Benefit Services, Inc. is an employee benefits consulting, management and brokerage firm based out of Columbia, SC. Independently owned and operated since 1986 and built upon a tradition of integrity, industry leadership and excellence.     <a href="about.html">Read More</a></p>
                 </div>
 
@@ -83,7 +82,6 @@
         </section>
 
         <footer>
-
             <div class="newsletter">
                 <p>Sign Up for Our Newsletter</p>
                 <input type="email" name="email" placeholder="Email Address"> 
@@ -101,12 +99,12 @@
                 </nav>
 
                 <div>
-                    <span class="fa fa-twitter fa-2x"></span>
-                    <span class="fa fa-facebook fa-2x"></span>
-                    <span class="fa fa-envelope fa-2x"></span>
+                    <a href=""><img src="img/twitter.svg" alt""></a>
+                    <a href=""><img src="img/instagram.svg" alt""></a>
+                    <a href=""><img src="img/facebook.svg" alt""></a>
                 </div>
-                
-                 <p>Copyright 2016 Plan Benefit Services, Inc.</p>
+
+                <p>Copyright 2016 Plan Benefit Services, Inc.</p>
             </div>
 
         </footer>
