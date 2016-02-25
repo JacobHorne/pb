@@ -2,9 +2,9 @@
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
 $darkblue:#2a4a7a;
-$lightblue:#5bc0de;
+$lightblue:#89cff0;
 $lightgrey:#f4f4f4;
-$bodytextgrey:#4f4f4f;
+$bodytextgrey:#373737;
 $black:#2d2d2d;
 $red:#be292e;
 
@@ -43,6 +43,15 @@ p{
 	line-height:1.5em;
 }
 
+#activeNav{
+	border:1.5px solid $darkblue;
+}
+
+#activeSideBar{
+	color:$red;
+	font-weight:700;
+}
+
 /***** SITE STYLES *************/
 /**********************************/
 .wrapper{
@@ -51,13 +60,37 @@ p{
 	margin: 0 auto;
 }
 .navigation{
-	padding:1em 0px; 
-	.full-navigation, .mobile-navigation{ 
-		display:none;
+	 
+	.full-navigation{
+		background-color:$darkblue;
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+		z-index: 2;
+		border-bottom:1px solid $black;
+		ul{
+			text-align:center;
+			margin:0;
+			padding:10px;
+		}
+		li{
+			display: inline-block;
+		}
+		a{
+			text-align:center;
+			color:white;
+			padding:10px 6px;
+			text-decoration: none;
+			font-size: 0.9em;
+		}
 	}
 	img{
+		display: block;
+		padding:0em 0 0em 0;
 		width:60%;
-		max-width: 150px;
+		margin: 4em auto 1em auto;
+		max-width: 170px;
 	}
 }
 .main-large-image{
@@ -102,13 +135,17 @@ p{
 	}
 }
 .parent-text{
+	width:95%;
 	padding:1em 0 0 0;
 	font-size:1.4em;
 	h2{
 		color:$bodytextgrey
 	}
 	h1{
-		font-size: 1.7em;
+		font-size: 1.3em;
+	}
+	p{
+		text-align: left;
 	}
 }
 .services-text{
@@ -305,20 +342,28 @@ footer{
 	}
 	.navigation{
 		img{
+			margin:0;
+			padding:1em 0;
 			max-width: 200px;
 			float:left;
 		}
 		.full-navigation{
 			display: block;
 			position:absolute;
-			top:2.6em;
-			right:0;
+			top: 4.7em;
+    		right: 0;
+    		left: auto;
+			background-color:transparent;
+			border:none;
+			ul{
+				padding:0;
+			}
 			li{
 				display:inline-block;
-				margin:0px 5px;
+				margin:0px 0px 0px 5px;
 			}
 			a{
-				color:$red;
+				color:$darkblue;
 				text-decoration:none;
 				font-size: 1.1em;
 				padding:9px 6px;
@@ -327,7 +372,7 @@ footer{
 				@include border-radius(4px);
 				transition: ease-in-out 0.2s;
 				&:hover{
-					border:1.5px solid $red;
+					border:1.5px solid $darkblue;
 				}
 			}
 		}
@@ -350,22 +395,24 @@ footer{
 		}
 	}
 	.parent-text{
-		padding: 1em 0 0 0;
+		width:90%;
+		padding: 1em 0 0 1em;
 		font-size:1.4em;
-		width:100%;
-		text-align:left;
-		div{
-
+		p{
+			text-align: left;
+		}
+		h1{
+			text-align: center;
 		}
 	}
 	.col-4{
 		text-align: center;
-		padding:2em 0 3em 0;
+		padding:3em 0 3em 0;
 		div{
 			width:45%;
 			display:inline-block;
 			vertical-align: top;
-			padding:10px 0px;
+			padding:1em 0px;
 			border-bottom:none;
 			margin:0px 2%;
 			max-width:700px;
@@ -396,7 +443,7 @@ footer{
 		padding:2em 0em;
 	}
 	.subpage-main-content{
-		width:75%;
+		width:60%;
 		float:left;
 		img{
 			display:block;
@@ -414,7 +461,7 @@ footer{
 	.sidebar{
 		position:relative;
 		display: block;
-		width:35%;
+		width:30%;
 		float:right;
 		padding:1.8em 0em 0 0;
 		ul:first-child{
@@ -490,28 +537,32 @@ footer{
 	}
 	.navigation{
 		.full-navigation{
-			right: 0;
 		}
 	}
 	.subpage-main-content{
-		width:70%;
+		width:60%;
 	}
 	.parent-text{
 		text-align: center;
+		width: 100%;
+		padding:1em 0 0 0em;
 		div{
 			width:45%;
 			display: inline-block;
 			vertical-align: top;
 		}
-		h2,p{
+		h2{
 			text-align:left;
 		}
+		p{
+			text-align: justify;
+		}
 		.second{
-			margin-left: 4%;
+			margin-left: 3.5%;
 		}
 	}
 	.sidebar{
-		width:25%;
+		width:30%;
 	}
 	footer{
 		input{
