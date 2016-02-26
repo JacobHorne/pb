@@ -4,7 +4,7 @@
 
 	//random images on refresh.
 	$(window).load(function () {
-		var images = ['home.jpg', 'about.jpg', 'employee.jpg', 'retiree.jpg'];
+		var images = ['main1.jpg', 'main2.jpg', 'main3.jpg', 'main4.jpg'];
 		$('#background').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
 	});
 

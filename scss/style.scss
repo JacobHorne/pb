@@ -4,7 +4,8 @@
 $darkblue:#2a4a7a;
 $lightblue:#89cff0;
 $lightgrey:#f4f4f4;
-$bodytextgrey:#373737;
+$darkgrey:#464646;
+$bodytextgrey:#435363;
 $black:#2d2d2d;
 $red:#be292e;
 
@@ -41,6 +42,7 @@ h2{
 }
 p{
 	line-height:1.5em;
+	font-size:1.1em;
 }
 
 #activeNav{
@@ -68,11 +70,11 @@ p{
 		left:0;
 		right:0;
 		z-index: 2;
-		border-bottom:1px solid $black;
+		padding:5px;
 		ul{
 			text-align:center;
 			margin:0;
-			padding:10px;
+			padding:0.7em;
 		}
 		li{
 			display: inline-block;
@@ -89,13 +91,15 @@ p{
 		display: block;
 		padding:0em 0 0em 0;
 		width:60%;
-		margin: 4em auto 1em auto;
+		margin: 4.7em auto 0.7em auto;
 		max-width: 170px;
 	}
 }
 .main-large-image{
 	position:relative;
-	background: url("../img/insurance-large.jpg") no-repeat;
+	background: url("../img/main1.jpg") no-repeat;
+	background-position:center center;
+	margin-top:0.5em;
 	height:500px; 
 	max-width:1500px;
   	-webkit-background-size: cover;
@@ -125,27 +129,40 @@ p{
   		}
   	}
 }
+.main-text-bar{
+	max-width:1500px;
+	margin: 0 auto;
+	padding:1em;
+	background-color:$bodytextgrey;
+	margin-bottom:1.5em;
+	h1{
+		text-align: center;
+		font-size: 1em;
+		color:white;
+		font-weight: 400;
+		font-style: italic;
+	}
+}
+
 .subpage-heading{
-	background-color:$darkblue;
-	padding:1em 0;
+	margin-bottom:1.5em;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a4a7a+0,3a68a8+96 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a4a7a+0,207cca+100,207cca+100 */
+	background: rgb(42,74,122); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(42,74,122,1) 0%, rgba(32,124,202,1) 100%, rgba(32,124,202,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(42,74,122,1) 0%,rgba(32,124,202,1) 100%,rgba(32,124,202,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(42,74,122,1) 0%,rgba(32,124,202,1) 100%,rgba(32,124,202,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a4a7a', endColorstr='#207cca',GradientType=1 ); /* IE6-9 */
+
+
+
 	h1{
 		color:white;
 		font-size: 1.5em;
+		padding:0.5em;
+		font-weight: 500;
+		margin: 0;
 
-	}
-}
-.parent-text{
-	width:95%;
-	padding:1em 0 0 0;
-	font-size:1.4em;
-	h2{
-		color:$bodytextgrey
-	}
-	h1{
-		font-size: 1.3em;
-	}
-	p{
-		text-align: left;
 	}
 }
 .services-text{
@@ -154,12 +171,11 @@ p{
 }
 .subpage-main-content{
 	position:relative;
-	padding:2em 0px;
+	padding:0em 0px;
 	img{
 		display:block;
 		width:100%;
 		@include border-radius(4px);
-		border:1px solid $bodytextgrey;
 	}
 	h2{
 		padding:0.5em 0;
@@ -174,7 +190,14 @@ p{
 .sidebar{
 	position:relative;
 	display: block;
-	padding:0 0 2em 0;
+	padding:4em 0 2em 0;
+	margin-top:4em;
+	border-top: 4px solid $bodytextgrey;
+	nav{
+		background: #eff0f2;
+    	padding: 1em;
+    	@include border-radius(5px);
+	}
 	ul{
 		list-style: none;
 	}
@@ -192,7 +215,7 @@ p{
 		font-weight:700;
 	}
 	a{
-		font-size: 1em;
+		font-size: 1.1em;
 		text-decoration: none;
 		color:$darkblue;
 		font-weight: 400px;
@@ -209,7 +232,7 @@ p{
 	}
 }
 .col-2{
-	padding:0 0 3em 0;
+	padding:0 0 5em 0;
 	a{
 		display: block;
 		width:90%;
@@ -222,10 +245,9 @@ p{
 		width: 100%;
 		max-width: 500px;
 		@include border-radius(4px);
-		border:1px solid $bodytextgrey;
 	}
 	h2{
-		color:$bodytextgrey;
+		color:$darkblue;
 	}
 }
 .col-4{
@@ -241,8 +263,7 @@ p{
 		width: 95%;
 		max-width: 500px;
 		@include border-radius(4px);
-		border:1px solid $bodytextgrey;
-	}
+		}
 	p{
 		margin-bottom:0px;
 	}
@@ -343,14 +364,14 @@ footer{
 	.navigation{
 		img{
 			margin:0;
-			padding:1em 0;
-			max-width: 200px;
+			margin:1.5em 0 1em 0;
+			max-width: 185px;
 			float:left;
 		}
 		.full-navigation{
 			display: block;
 			position:absolute;
-			top: 4.7em;
+			top: 4.5em;
     		right: 0;
     		left: auto;
 			background-color:transparent;
@@ -389,9 +410,6 @@ footer{
 		img{
 			width: 95%;
 			transition: ease all 0.5s;
-			&:hover{
-				border:1px solid $lightgrey;
-			}
 		}
 	}
 	.parent-text{
@@ -426,17 +444,15 @@ footer{
 			width:75%;
 		}
 		img{
-			width: 98%;
+			width: 100%;
 			transition: ease all 0.3s;
-			&:hover{
-				border:1px solid $lightgrey;
-			}
 		}
 	}
 	.subpage-heading{
 		h1{
-			font-size: 2em;
-			margin:0.2em 0;
+			font-size: 1.6em;
+    		padding: 0.6em 0;
+    		margin: 0;
 		}
 	}
 	.subpage-container{
@@ -459,11 +475,13 @@ footer{
 		}
 	}
 	.sidebar{
+		margin-top:0;
+		border:none;
 		position:relative;
 		display: block;
-		width:30%;
+		width:35%;
 		float:right;
-		padding:1.8em 0em 0 0;
+		padding:0;
 		ul:first-child{
 			padding:0;
 		}
@@ -478,7 +496,7 @@ footer{
 			font-weight:700;
 		}
 		a{
-			font-size: 1em;
+			font-size: 1.1em;
 			text-decoration: none;
 			color:$darkblue;
 			font-weight: 400px;
@@ -510,6 +528,18 @@ footer{
 	}
 }
 @media screen and (min-width: 1000px) {
+	.navigation{
+		img{
+			max-width: 225px;
+			margin:1.5em 0 1.5em 0;
+		}
+		.full-navigation{
+			top:5.6em;
+			a{
+				font-size: 1.25em;
+			}
+		}
+	}
 	.main-large-image{
 		width:100%;
 		margin:0 auto;
@@ -519,6 +549,9 @@ footer{
 		a{
 			display: inline-block;
 			width:24.5%;
+		}
+		.special{
+			margin-left:3%;
 		}
 	}
 	.col-4{
@@ -534,35 +567,18 @@ footer{
 		p{
 			text-align:left;
 		}
-	}
-	.navigation{
-		.full-navigation{
+		img{
+			width: 100%;
 		}
 	}
 	.subpage-main-content{
 		width:60%;
 	}
-	.parent-text{
-		text-align: center;
-		width: 100%;
-		padding:1em 0 0 0em;
-		div{
-			width:45%;
-			display: inline-block;
-			vertical-align: top;
-		}
-		h2{
-			text-align:left;
-		}
-		p{
-			text-align: justify;
-		}
-		.second{
-			margin-left: 3.5%;
-		}
-	}
 	.sidebar{
-		width:30%;
+		width:35%;
+		a{
+			font-size: 1.2em;
+		}
 	}
 	footer{
 		input{
@@ -573,8 +589,16 @@ footer{
 		}
 	}
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1000px) {
+	.subpage-main-content{
+		width:45%;
+	}
+	.sidebar{
+		width:45%;
+
+	}
 }
+
 
 
 
