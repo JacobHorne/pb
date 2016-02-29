@@ -61,8 +61,8 @@ p{
 	width:90%;
 	margin: 0 auto;
 }
+
 .navigation{
-	 
 	.full-navigation{
 		background-color:$darkblue;
 		position:fixed;
@@ -107,9 +107,6 @@ p{
   	-o-background-size: cover;
   	background-size: cover;
   	border-top:0.5px solid $lightgrey;
-  	-webkit-box-shadow: 0px 3px 5px 0px rgba(145,143,145,1);
-	-moz-box-shadow: 0px 3px 5px 0px rgba(145,143,145,1);
-	box-shadow: 0px 1px 3px 0px rgba(145,143,145,1);
   	.overlay-text{
   		position:absolute;
   		bottom:20px;
@@ -130,6 +127,9 @@ p{
   	}
 }
 .main-text-bar{
+	-webkit-box-shadow: 0px -2px 5px 0px rgba(84,84,84,1);
+	-moz-box-shadow: 0px -2px 5px 0px rgba(84,84,84,1);
+	box-shadow: 0px -2px 5px 0px rgba(84,84,84,1);
 	max-width:1500px;
 	margin: 0 auto;
 	padding:1em;
@@ -145,17 +145,8 @@ p{
 }
 
 .subpage-heading{
-	margin-bottom:1.5em;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a4a7a+0,3a68a8+96 */
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a4a7a+0,207cca+100,207cca+100 */
-	background: rgb(42,74,122); /* Old browsers */
-	background: -moz-linear-gradient(left,  rgba(42,74,122,1) 0%, rgba(32,124,202,1) 100%, rgba(32,124,202,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left,  rgba(42,74,122,1) 0%,rgba(32,124,202,1) 100%,rgba(32,124,202,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  rgba(42,74,122,1) 0%,rgba(32,124,202,1) 100%,rgba(32,124,202,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a4a7a', endColorstr='#207cca',GradientType=1 ); /* IE6-9 */
-
-
-
+	margin-bottom:2em;
+	background-color:$darkblue;
 	h1{
 		color:white;
 		font-size: 1.5em;
@@ -190,11 +181,11 @@ p{
 .sidebar{
 	position:relative;
 	display: block;
-	padding:4em 0 2em 0;
-	margin-top:4em;
-	border-top: 4px solid $bodytextgrey;
+	padding:2em 0 2em 0;
+	margin-top:2em;
+	border-top: 1px solid $lightgrey;
 	nav{
-		background: #eff0f2;
+		background-color:#f5f8fa;
     	padding: 1em;
     	@include border-radius(5px);
 	}
@@ -260,7 +251,7 @@ p{
 		}
 	}
 	img{
-		width: 95%;
+		width: 100%;
 		max-width: 500px;
 		@include border-radius(4px);
 		}
@@ -359,7 +350,7 @@ footer{
 @media screen and (min-width: 650px) {
 	.wrapper{
 		width:95%;
-		max-width: 1500px;
+		max-width: 1300px;
 	}
 	.navigation{
 		img{
@@ -412,17 +403,6 @@ footer{
 			transition: ease all 0.5s;
 		}
 	}
-	.parent-text{
-		width:90%;
-		padding: 1em 0 0 1em;
-		font-size:1.4em;
-		p{
-			text-align: left;
-		}
-		h1{
-			text-align: center;
-		}
-	}
 	.col-4{
 		text-align: center;
 		padding:3em 0 3em 0;
@@ -449,6 +429,7 @@ footer{
 		}
 	}
 	.subpage-heading{
+		margin-bottom:1.5em;
 		h1{
 			font-size: 1.6em;
     		padding: 0.6em 0;
@@ -479,7 +460,7 @@ footer{
 		border:none;
 		position:relative;
 		display: block;
-		width:35%;
+		width:38%;
 		float:right;
 		padding:0;
 		ul:first-child{
@@ -575,7 +556,7 @@ footer{
 		width:60%;
 	}
 	.sidebar{
-		width:35%;
+		width:38%;
 		a{
 			font-size: 1.2em;
 		}
@@ -589,14 +570,8 @@ footer{
 		}
 	}
 }
-@media screen and (min-width: 1000px) {
-	.subpage-main-content{
-		width:45%;
-	}
-	.sidebar{
-		width:45%;
-
-	}
+@media screen and (min-width: 1300px) {
+	
 }
 
 
