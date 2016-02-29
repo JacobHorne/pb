@@ -468,8 +468,8 @@ footer .social-footer p {
   }
 
   /* line 392, ../scss/style.scss */
-  .mobile-icon {
-    display: none;
+  .main-text-bar {
+    margin-bottom: 2em;
   }
 
   /* line 395, ../scss/style.scss */
@@ -638,25 +638,30 @@ footer .social-footer p {
   }
 
   /* line 528, ../scss/style.scss */
+  .main-text-bar {
+    margin-bottom: 3em;
+  }
+
+  /* line 531, ../scss/style.scss */
   .col-2 {
     text-align: center;
   }
-  /* line 530, ../scss/style.scss */
+  /* line 533, ../scss/style.scss */
   .col-2 a {
     display: inline-block;
     width: 24.5%;
   }
-  /* line 534, ../scss/style.scss */
+  /* line 537, ../scss/style.scss */
   .col-2 .special {
     margin-left: 3%;
   }
 
-  /* line 538, ../scss/style.scss */
+  /* line 541, ../scss/style.scss */
   .col-4 {
     padding: 0em 0 3em 0;
     text-align: center;
   }
-  /* line 541, ../scss/style.scss */
+  /* line 544, ../scss/style.scss */
   .col-4 div {
     width: 20%;
     display: inline-block;
@@ -664,34 +669,34 @@ footer .social-footer p {
     border-bottom: none;
     margin: 0px 2%;
   }
-  /* line 548, ../scss/style.scss */
+  /* line 551, ../scss/style.scss */
   .col-4 p {
     text-align: left;
   }
-  /* line 551, ../scss/style.scss */
+  /* line 554, ../scss/style.scss */
   .col-4 img {
     width: 100%;
   }
 
-  /* line 555, ../scss/style.scss */
+  /* line 558, ../scss/style.scss */
   .subpage-main-content {
     width: 60%;
   }
 
-  /* line 558, ../scss/style.scss */
+  /* line 561, ../scss/style.scss */
   .sidebar {
     width: 38%;
   }
-  /* line 560, ../scss/style.scss */
+  /* line 563, ../scss/style.scss */
   .sidebar a {
     font-size: 1.2em;
   }
 
-  /* line 565, ../scss/style.scss */
+  /* line 568, ../scss/style.scss */
   footer input {
     max-width: 600px;
   }
-  /* line 568, ../scss/style.scss */
+  /* line 571, ../scss/style.scss */
   footer button {
     max-width: 600px;
   }
