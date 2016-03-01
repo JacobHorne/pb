@@ -19,35 +19,35 @@
         <section class="col-2">
             <section class="wrapper">
             
-                <a href="employee.html" alt="">
+                <a href="employee.php" alt="">
                     <h2>Employee Benefits</h2>
                     <img src="img/employee.jpg" alt="">
                 </a>
-                <a href="retiree.html" alt="">
+                <a href="retiree.php" alt="">
                     <h2>Retiree Benefits</h2>
                     <img src="img/retiree.jpg" alt="">
                 </a>
-                <a href="individual.html" alt="">
+                <a href="individual.php" alt="">
                     <h2>Individual Insurance</h2>
                     <img src="img/individual.jpg" alt="">
                 </a>
-                <a href="compliance.html" alt="">
+                <a href="compliance.php" alt="">
                     <h2>Compliance</h2>
                     <img src="img/compliance.jpg" alt="">
                 </a>
-                <a href="wellness.html" alt="">
+                <a href="wellness.php" alt="">
                     <h2>Wellness Programs</h2>
                     <img src="img/wellness.jpg" alt="">
                 </a>
-                <a href="clinic.html" alt="">
+                <a href="clinic.php" alt="">
                     <h2>On-Site / Near-Site Clinics</h2>
                     <img src="img/clinic.jpg" alt="">
                 </a>
-                <a href="telemedicine.html" alt="">
+                <a href="telemedicine.php" alt="">
                     <h2>Telemedicine</h2>
                     <img src="img/telemedicine.jpg" alt="">
                 </a>
-                <a href="prescription.html" alt="">
+                <a href="prescription.php" alt="">
                     <h2>Prescription Drugs</h2>
                     <img src="img/prescription.jpg" alt="">
                 </a>

@@ -1,6 +1,6 @@
 <?php
 
-  $site_name = "PB";
-  $site_description = "DESC";
+  $site_name = "Plan Benefits Services";
+  $site_description = "Employee Benefits consulting, management and brokerage firm independently owned and operated since 1986";
 
 ?>

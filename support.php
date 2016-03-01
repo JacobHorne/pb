@@ -18,23 +18,23 @@
         <section class="col-2">
             <section class="wrapper">
             
-                <a href="hr.html" alt="">
+                <a href="hr.php" alt="">
                     <h2>HR Support</h2>
                     <img src="img/hr.jpg" alt="">
                 </a>
-                <a href="benchmarking.html" alt="">
+                <a href="benchmarking.php" alt="">
                     <h2>Benchmarking</h2>
                     <img src="img/benchmarking.jpg" alt="">
                 </a>
-                <a href="benefits.html" alt="">
+                <a href="benefits.php" alt="">
                     <h2>Benefits Statements</h2>
                     <img src="img/benefits.jpg" alt="">
                 </a>
-                <a href="communications.html" class="special" alt="">
+                <a href="communications.php" class="special" alt="">
                     <h2>Communication</h2>
                     <img src="img/communications.jpg" alt="">
                 </a>
-                <a href="claims.html" alt="">
+                <a href="claims.php" alt="">
                     <h2>Claims & Trends Analyzation</h2>
                     <img src="img/claims.jpg" alt="">
                 </a>

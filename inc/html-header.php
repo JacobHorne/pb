@@ -9,7 +9,7 @@
 
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
 </head>
