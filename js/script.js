@@ -13,8 +13,9 @@
      	var url = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
     
 	    $(".full-navigation a").each(function(){
-	        if($(this).attr("href") == url || $(this).attr("href") == '' )
-	        $(this).attr('id', 'activeNav');
+	        if($(this).attr("href") == url || $(this).attr("href") == '' ) {
+	        	$(this).attr('id', 'activeNav');
+	        }
 	    })
 	});
 
@@ -23,8 +24,9 @@
      	var url = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
     
 	    $(".sidebar ul a").each(function(){
-	        if($(this).attr("href") == url || $(this).attr("href") == '' )
-	        $(this).attr('id', 'activeSideBar');
+	        if($(this).attr("href") == url || $(this).attr("href") == '' ) {
+	        	$(this).attr('id', 'activeSideBar');
+	        }
 	    })
 	});
 

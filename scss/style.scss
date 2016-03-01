@@ -1,14 +1,8 @@
 @import "Compass";
+@import "_variables";
+
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
-$darkblue:#2a4a7a;
-$lightblue:#89cff0;
-$lightgrey:#f4f4f4;
-$darkgrey:#464646;
-$bodytextgrey:#435363;
-$black:#2d2d2d;
-$red:#be292e;
-
 
 .clearfix {
     zoom: 1;
@@ -23,6 +17,7 @@ $red:#be292e;
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -33,7 +28,7 @@ html {
 /**********************************/
 
 body{
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', ;
 	color:$bodytextgrey;
 }
 h2{
@@ -111,18 +106,18 @@ p{
   		position:absolute;
   		bottom:20px;
   		left:20px;
-  		width: 50%;
-  		padding:1em;
+  		padding:0.5em;
   		background: linear-gradient(to right, rgba(0,0,0,0.6) 0%,rgba(0,0,0,.01) 100%);
   		@include border-radius(4px);
-  		h1{
+  		h2{
   			color:white;
-			font-size: 2em;
-			margin: 0;
+  			font-size: 1.3em;
+  			margin-bottom: 0;
   		}
   		h3{
   			color:white;
-  			line-height: 1em;
+  			margin-top:0;
+  			font-weight: 400;
   		}
   	}
 }
@@ -257,6 +252,9 @@ p{
 		}
 	p{
 		margin-bottom:0px;
+	}
+	a{
+		text-decoration: none;
 	}
 	.read-more{
 		display: block;
@@ -427,6 +425,9 @@ footer{
 			width: 100%;
 			transition: ease all 0.3s;
 		}
+		p{
+			margin-top: 0;
+		}
 	}
 	.subpage-heading{
 		margin-bottom:1.5em;
@@ -444,10 +445,10 @@ footer{
 		float:left;
 		img{
 			display:block;
-			width:95%;
+			width:80%;
 		}
 		p{
-			width:93%;
+			width:85%;
 		}
 	}
 	.services-text{
@@ -485,7 +486,6 @@ footer{
 			@include border-radius(4px);
 			&:hover{
 				color:$red;
-				font-weight: 700;
 			}
 
 		}
