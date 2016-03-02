@@ -9,16 +9,15 @@
 <?php include ('inc/html-header.php'); ?>
 <?php include ('inc/header.php'); ?>
 
-
-        <section class="main-large-image" id="background">
-            <div class="overlay-text">
-                <h2>Plan Benefit Services Cares</h2>
-                <h3>Let us help you make the right decision</h3>
-            </div>
-        </section>
+        <div class="slider">
+           <div><img src="img/main1.jpg"></div>
+           <div><img src="img/main2.jpg"></div>
+           <div><img src="img/main3.jpg"></div>
+           <div><img src="img/main4.jpg"></div>
+        </div>
 
         <section class="main-text-bar">
-                <h1>Employee Benefits consulting, management and brokerage firm independently owned and operated since 1986</h1>
+            <h1>Employee Benefits consulting, management and brokerage firm independently owned and operated since 1986</h1>
         </section>
 
         <section class="col-4">

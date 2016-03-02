@@ -11,7 +11,7 @@
 
         <div class="subpage-heading">
             <div class="wrapper">
-                <h1>Support</h1>
+                <h2>Support</h2>
             </div>
         </div>
 

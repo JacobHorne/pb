@@ -2,10 +2,14 @@
 
 (function( window, undefined ){
 
-	//random images on refresh.
-	$(window).load(function () {
-		var images = ['main1.jpg', 'main2.jpg', 'main3.jpg', 'main4.jpg'];
-		$('#background').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+	$(document).ready(function(){	
+		  $('.slider').slick({
+		  dots: true,
+		  infinite: false,
+		  speed: 400,
+		  autoplay: true,
+  		  autoplaySpeed: 5000,
+		});
 	});
 
 	//Adding Active States to Navigation
@@ -18,6 +22,7 @@
 	        }
 	    })
 	});
+
 
 	//Adding Active States to Sidebar
 	$(function() {

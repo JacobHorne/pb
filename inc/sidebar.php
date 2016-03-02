@@ -4,6 +4,7 @@
         <ul>
             <li><a href="index.php" class="em">Home</a></li>
             <li><a href="about.php" class="em">About</a></li>
+
             <li><a href="services.php" class="em">Services</a>
                 <ul>
                     <li><a href="employee.php">Employee Benefits</a></li>
@@ -16,16 +17,19 @@
                     <li><a href="prescription.php">Prescription Drugs</a></li>
                 </ul>
             </li>
-            <li><a href="support.html" class="em">Support</a>
+
+            <li><a href="support.php" class="em">Support</a>
                 <ul>
                     <li><a href="hr.php">HR Support</a></li>
                     <li><a href="benchmarking.php">Benchmarking</a></li>
                     <li><a href="benefits.php">Benefits Statements</a></li>
                     <li><a href="communications.php">Communication</a></li>
-                    <li><a href="claims.php">Claims & Trends Analyzation</a></li>
+                    <li><a href="claims.php">Claims &amp; Trends Analyzation</a></li>
                 </ul>
             </li>
+
             <li><a href="contact.php" class="em">Contact</a></li>
+    
         </ul>
     </nav>
 </div>
