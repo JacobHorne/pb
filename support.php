@@ -18,13 +18,13 @@
         <section class="col-2">
             <section class="wrapper">
             
-                <a href="hr.php" alt="">
-                    <h2>HR Support</h2>
-                    <img src="img/hr.jpg" alt="">
-                </a>
                 <a href="benchmarking.php" alt="">
                     <h2>Benchmarking</h2>
                     <img src="img/benchmarking.jpg" alt="">
+                </a>
+                <a href="hr.php" alt="">
+                    <h2>HR Support</h2>
+                    <img src="img/hr.jpg" alt="">
                 </a>
                 <a href="benefits.php" alt="">
                     <h2>Benefits Statements</h2>

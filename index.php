@@ -10,10 +10,41 @@
 <?php include ('inc/header.php'); ?>
 
         <div class="slider">
-           <div><img src="img/main1.jpg"></div>
-           <div><img src="img/main2.jpg"></div>
-           <div><img src="img/main3.jpg"></div>
-           <div><img src="img/main4.jpg"></div>
+           <div>
+                <div class="slide-caption">
+                    <h2>Providing</h2>
+                    <h3>federal and state legislative guidance</h3>
+                </div>
+                <div class="slide-image1"></div>
+                <!-- <img src="img/main1.jpg">  -->
+           </div>
+
+           <div>
+                <div class="slide-caption">
+                    <h2>Bridging</h2>
+                    <h3>the gap between employees and Insurance carriers</h3>
+                </div>
+                <div class="slide-image2"></div>
+                <!-- <img src="img/main2.jpg"> -->
+           </div>
+
+           <div>
+                <div class="slide-caption">
+                    <h2>Keeping</h2>
+                    <h3>your benefits program on the right path</h3>
+                </div>
+                <div class="slide-image3"></div>
+                <!-- <img src="img/main3.jpg"> -->
+           </div>
+
+           <div>
+                <div class="slide-caption">
+                    <h2>Creating</h2>
+                    <h3>tailored benefit programs</h3>
+                </div>
+                <div class="slide-image4"></div>
+                <!-- <img src="img/main4.jpg"> -->
+           </div>
         </div>
 
         <section class="main-text-bar">

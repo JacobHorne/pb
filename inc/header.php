@@ -8,6 +8,6 @@
                 <li><a href="contact.php">CONTACT</a></li>
             </ul>
         </nav>
-        <a href="index.php" class="logo"><img src="img/pb-logo.jpg" alt="site logo"></a>
+        <a href="index.php" class="logo"><img src="img/logo.svg" alt="site logo"></a>
     </div>
 </section>

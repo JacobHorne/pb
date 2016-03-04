@@ -7,10 +7,9 @@
 		  dots: false,
 		  arrows:false,
 		  infinite: true,
-		  speed: 600,
+		  speed: 400,
 		  autoplay: true,
   		  autoplaySpeed: 5000,
-  		  fade: true,
 		});
 	});
 
